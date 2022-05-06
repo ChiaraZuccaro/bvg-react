@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+.All {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+    margin: 5px 0;
+
+    .Gallery {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 30px;
+    
+        margin: 8px 15px;
+    
+        padding: 0;
+    
+        list-style: none;
+    
+        transition: all 0.3 ease-in-out;
+    
+        animation-name: gallery;
+        animation-duration: 3s;
+    }
+    .Hide {
+        display: none;
+    }
+    h2 {
+        margin: 0;
+        margin-top: 12px;
+
+        font-size: 17px;
+        font-family: 'Koulen', cursive;
+    }
+}
+
+
+
+
+.GamingSection {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 400px) {
+    .All {        
+        h2 {
+            font-size: 20px;
+        }
+    }
+}
+@media (min-width: 600px) {
+    .All {        
+        h2 {
+            font-size: 27px;
+        }
+    }
+}
+@media (min-width: 1000px) {
+    .All {   
+        gap: 16px;     
+        h2 {
+            font-size: 33px;
+        }
+    }
+}

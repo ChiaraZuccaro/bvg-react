@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0 5px;
+}
+footer p {
+    font-size: 19px;
+    font-family: 'Square Peg', cursive;
+    text-shadow: 2px 2px 4px #424242;
+
+    margin: 20px auto;
+}
+footer p a {
+    color: black;
+}
+footer p a:hover {
+    text-decoration: none;
+}
+footer .social {
+    width: 100%;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+footer .social img {
+    width: 32px;
+    transition: all 0.3s ease-in-out;
+}
+footer .social img:hover {
+    width: 38px;
+}
+
+@media (min-width: 400px) {
+    footer p {
+        font-size: 23px;
+    }
+}
+@media (min-width: 600px) {
+    footer p {
+        font-size: 28px;
+    }
+}
+@media (min-width: 1000px) {
+    footer .social img {
+        width: 40px;
+    }
+    footer .social img:hover {
+        width: 50px;
+    }
+}
+@media (min-width: 1300px) {
+    footer p {
+        font-size: 32px;
+    }
+    footer .social img {
+        width: 50px;
+    }
+    footer .social img:hover {
+        width: 58px;
+    }
+}
+@media (min-width: 1600px) {
+    footer .social img {
+        width: 56px;
+    }
+    footer .social img:hover {
+        width: 64px;
+    }
+}
