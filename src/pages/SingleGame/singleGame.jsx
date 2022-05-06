@@ -3,6 +3,7 @@ import styles from "./styles.module.scss"
 import { games } from "../../game-library"
 import { Miniature } from "./Miniature/miniature"
 import { useState } from "react"
+import { SideBar } from "./SideBar/sidebar"
 
 export const SingleGame = ({ renderGame }) => {
     const objGame = games.filter((game) => game.name.toLowerCase().includes(renderGame))[0]
@@ -16,12 +17,13 @@ export const SingleGame = ({ renderGame }) => {
 
     return(
         <div className={styles.GameSpecified}>
-            <>            
+            <>
+                <SideBar text="bella"/>
                 <div className={ fullVisibile ? styles.OverLay : "hidden"}></div>
                 <div className={ fullVisibile ? styles.FullImage : "hidden"}>
                     {
                         fullImage !== ""  && (
-                        <img src={fullImage} alt="full image" />
+                        <img src={fullImage} alt="full" />
                         )
                     }
                 </div>

@@ -1,11 +1,11 @@
 import styles from "./styles.module.scss"
 
-// import poster from "../../apexclip.mp4"
+import poster from "../../apexclip.mp4"
 
 import {games } from "../../game-library"
 import { Filtered } from "../../components/Filtered/filter"
 import { useEffect, useState } from "react"
-// import { Video } from "../../components/Video/video"
+import { Video } from "../../components/Video/video"
 
 export const Gallery = ({ searchGame }) => {
     const [ searchGallery, setSearchGallery] = useState(games);
@@ -47,9 +47,9 @@ export const Gallery = ({ searchGame }) => {
             </ul>
                 
             <h2>Gaming</h2>
-            {/* <ul className={styles.GamingSection}>
+            <ul className={styles.GamingSection}>
                 <Video videoContent={poster} type={"FPS"}/>
-            </ul> */}
+            </ul>
 
 
         </div>

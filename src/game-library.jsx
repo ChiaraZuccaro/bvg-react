@@ -247,12 +247,12 @@ import aco16 from "./portfolio/assassins-odyssey-originali/odyssey (16).png"
 
 
 //   APEX LEGENDS CLIPS
-// import clip01 from "./portfolio/apex-clips/LAG-Clip.mp4"
-// import clip02 from "./portfolio/apex-clips/gibby-ult-again.mp4"
-// import clip03 from "./portfolio/apex-clips/best-gibby's-ult.mp4"
-// import clip04 from "./portfolio/apex-clips/full-team-rank.mp4"
-// import clip05 from "./portfolio/apex-clips/huh.mp4"
-// import clip06 from "./portfolio/apex-clips/spitfire-alla-riscossa.mp4"
+import clip01 from "./portfolio/apex-clips/LAG-Clip.mp4"
+import clip02 from "./portfolio/apex-clips/gibby-ult-again.mp4"
+import clip03 from "./portfolio/apex-clips/best-gibby's-ult.mp4"
+import clip04 from "./portfolio/apex-clips/full-team-rank.mp4"
+import clip05 from "./portfolio/apex-clips/huh.mp4"
+import clip06 from "./portfolio/apex-clips/spitfire-alla-riscossa.mp4"
 
 
 
@@ -557,11 +557,11 @@ export const games = [
     }
 ]
 
-// export const apex = [
-//     clip01,
-//     clip02,
-//     clip03,
-//     clip04,
-//     clip05,
-//     clip06
-// ]
+export const apex = [
+    clip01,
+    clip02,
+    clip03,
+    clip04,
+    clip05,
+    clip06
+]
