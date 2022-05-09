@@ -11,6 +11,7 @@ import { Gallery } from './pages/Gallery/gallery';
 import { Hero } from './pages/Hero/hero';
 
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { VideoGallery } from './pages/VideoGallery/videogallery';
 
 
 
@@ -34,6 +35,8 @@ function App() {
           <Route path="/gallery/devil-may-cry-dmc" element={<SingleGame renderGame="dmc"/>} />
 
           <Route path="/gallery/assassins-creed-odyssey" element={<SingleGame renderGame="odyssey"/>} />
+
+          <Route path='/gallery/apex-legends' element={<VideoGallery />}/>
 
           <Route path="/gallery" element={<Gallery searchGame={search}/>} />
           <Route path="/" element={<Hero />} />

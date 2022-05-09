@@ -48,7 +48,7 @@ export const Gallery = ({ searchGame }) => {
                 
             <h2>Gaming</h2>
             <ul className={styles.GamingSection}>
-                <Video videoContent={poster} type={"FPS"}/>
+                <Video videoContent={poster} type={"FPS"} wait={400}/>
             </ul>
 
 
