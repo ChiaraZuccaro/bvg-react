@@ -103,8 +103,8 @@
         
         .MinGrid {
             display: grid;
-            // position: relative;
-            // left: 130px;
+            position: relative;
+            left: 130px;
 
             width: 450px;
         }
@@ -113,18 +113,47 @@
 @media (min-width: 1000px) {
     .GameSpecified {
         grid-template-areas:
-        "title title title "
-        "sidebar photos photos "
-        "sidebar photos photos"
-        "sidebar photos photos";
+        "title title "
+        "sidebar photos  "
+        "sidebar photos "
+        "sidebar photos ";
         .MinGrid {
-            grid-template-columns: repeat(2, 430px);
-
+            left: 70px;
             width: 85%;
         }
 
         h2 {
             font-size: 35px;        
+        }
+    }
+}
+@media (min-width: 1150px) {
+    .GameSpecified {
+        .MinGrid {
+            left: 128px;
+            grid-template-columns: repeat(2, 426px);
+        }
+    }
+}
+@media (min-width: 1300px) {
+    .GameSpecified {
+        .MinGrid {
+            left: 110px;
+        }
+    }
+}
+@media (min-width: 1600px) {
+    .GameSpecified {
+        .MinGrid {
+            left: 150px;
+            grid-template-columns: repeat(3, 426px);
+        }
+    }
+}
+@media (min-width: 1920px) {
+    .GameSpecified {
+        .MinGrid {
+            left: 110px;
         }
     }
 }

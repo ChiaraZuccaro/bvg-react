@@ -292,7 +292,7 @@ export const games = [
             rtr2BMin,
             rtr3BMin,
             rtr4BMin,
-            rtr5BMin,
+            rtr6BMin,
             rtr1Min,
             rtr2Min,
             rtr3Min,

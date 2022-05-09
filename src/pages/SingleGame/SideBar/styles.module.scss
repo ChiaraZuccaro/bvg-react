@@ -143,8 +143,8 @@
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
         width: 250px;
-        height: 150%;
-        position: absolute;
+        height: 60%;
+        position: fixed;
         top: 185px;
 
         .SideBar {
@@ -190,10 +190,28 @@
                 display: block;
                 opacity: 1;    
                 transition: opacity 0.5s ease-in-out;
-
                 font-style: italic;
+                font-family: 'Open Sans', sans-serif;
             }
         }
     }
     
+}
+
+@media (min-width: 1000px) {
+    .Wrapper {
+        top: 230px;
+
+        height: 53%;
+    }
+}
+@media (min-width: 1150px) {
+    .Wrapper {
+        width: 230px;
+    }
+}
+@media (min-width: 1300px) {
+    .Wrapper {
+        width: 250px;
+    }
 }
