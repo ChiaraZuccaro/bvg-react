@@ -17,6 +17,7 @@ export const SideBar = ({ text }) => {
         setSideActive(false)
     }
 
+
     return (
         <>
         <div className={styles.Icon}>
@@ -26,12 +27,12 @@ export const SideBar = ({ text }) => {
             <img className={sideActive ? styles.Show : styles.Hide} 
             src={closeImg} alt="close menu" onClick={close}/>
         </div>
-        
+
         <div className={`${styles.Wrapper} ${sideActive ? styles.WrapHigh : ""}`}>            
             <div className={`${styles.SideBar} ${sideActive ? styles.Display : ""}`}>
                 <p className={`${text !== "" ? styles.Quotes : styles.Hide} 
                 ${sideActive ? styles.QuotesDisplay : ""}`}>
-                    {text}
+                    " {text} "
                 </p>
                 <div className={`${styles.NormalButton} ${sideActive ? styles.ButtonFlex : ""}`}>                
                     <Link to="/gallery">Back to gallery</Link>

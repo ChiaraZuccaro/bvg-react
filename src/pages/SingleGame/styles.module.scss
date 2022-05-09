@@ -1,23 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
 
-
-// #arrow-top {
-//     width: 30px;
-
-//     position: fixed;
-//     bottom: 140px;
-//     left: 270px;
-
-//     transform: rotate(90deg);
-
-//     padding: 2px;
-
-//     border: 1px black solid;
-//     border-radius: 30px;
-
-//     background-color: antiquewhite ;
-// }
-
 .GameSpecified {
     scroll-behavior: smooth;
 
@@ -26,6 +8,8 @@
     
         font-family: 'Carter One', cursive;
         font-size: 15px;
+
+        grid-area: title;
     
         text-align: center;
         text-shadow: 1px 0px 1px #CCCCCC, 
@@ -54,6 +38,8 @@
         padding: 0;
     
         list-style: none;
+        
+        grid-area: photos;
     }
 }
 
@@ -104,8 +90,41 @@
         font-size: 28px;
     }
 }
+@media (min-width: 800px) {
+    .GameSpecified {
+        display: grid;
+
+        grid-template-areas:
+        "title title "
+        "sidebar photos "
+        "sidebar photos "
+        "sidebar photos ";
+
+        
+        .MinGrid {
+            display: grid;
+            // position: relative;
+            // left: 130px;
+
+            width: 450px;
+        }
+    }
+}
 @media (min-width: 1000px) {
-    .GameSpecified h2 {
-        font-size: 35px;
+    .GameSpecified {
+        grid-template-areas:
+        "title title title "
+        "sidebar photos photos "
+        "sidebar photos photos"
+        "sidebar photos photos";
+        .MinGrid {
+            grid-template-columns: repeat(2, 430px);
+
+            width: 85%;
+        }
+
+        h2 {
+            font-size: 35px;        
+        }
     }
 }

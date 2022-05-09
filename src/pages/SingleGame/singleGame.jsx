@@ -15,10 +15,12 @@ export const SingleGame = ({ renderGame }) => {
         setFullImage(objGame.all[index]);
     }
 
+    
+
     return(
         <div className={styles.GameSpecified}>
             <>
-                <SideBar text="bella"/>
+                <SideBar text="bel gioco"/>
                 <div className={ fullVisibile ? styles.OverLay : "hidden"}></div>
                 <div className={ fullVisibile ? styles.FullImage : "hidden"}>
                     {
@@ -28,12 +30,12 @@ export const SingleGame = ({ renderGame }) => {
                     }
                 </div>
 
-                <h2 id="top">{objGame.name}</h2>
+                <h2>{objGame.name}</h2>
 
                 <ul className={styles.MinGrid}>                
                     {
                         objGame.miniature.map((min, i) => (
-                            <li key={i} onClick={() => reachFull(i)}>
+                            <li key={i} id={String(i)} onClick={() => reachFull(i)}>
                                 <Miniature imageMin={min} waiting={200 * i}/>
                             </li>
                         ))
