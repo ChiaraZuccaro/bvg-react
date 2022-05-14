@@ -4,9 +4,11 @@ import { games, cover } from "../../game-library";
 import { Filtered } from "../../components/Filtered/filter";
 import { useEffect, useState } from "react";
 import { Video } from "../../components/Video/video";
+import { useLocation } from "react-router-dom";
 
 export const Gallery = ({ searchGame }) => {
   const [searchGallery, setSearchGallery] = useState(games);
+  const { pathname, hash } = useLocation();
 
   useEffect(() => {
     const filterGame = games.filter((game) =>
@@ -14,6 +16,20 @@ export const Gallery = ({ searchGame }) => {
     );
     setSearchGallery(filterGame);
   }, [searchGame]);
+
+  useEffect(() => {
+    if (hash === "") {
+      window.scrollTo(0, 0);
+    } else {
+      setTimeout(() => {
+        const id = hash.replace("top", "");
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView();
+        }
+      }, 0);
+    }
+  }, [pathname, hash]);
 
   return (
     <div className={styles.All}>

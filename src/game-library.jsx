@@ -506,3 +506,10 @@ export const apex = [
     url: "https://www.instagram.com/p/CZ6q0oOKMeW/",
   },
 ];
+
+export const funny = [
+  {
+    video: "",
+    url: "",
+  },
+];

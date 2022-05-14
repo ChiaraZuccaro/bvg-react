@@ -139,17 +139,6 @@
     }
   }
 }
-@media (min-width: 800px) {
-  .VideoGallery {
-    grid-template-areas:
-      "title title"
-      "sidebar videos"
-      "sidebar videos";
-    .GridVideo {
-      grid-area: videos;
-    }
-  }
-}
 @media (min-width: 1000px) {
   .GamingCard {
     &.Visible {

@@ -105,11 +105,6 @@
 }
 @media (min-width: 1000px) {
   .GameSpecified {
-    grid-template-areas:
-      "title title "
-      "sidebar photos  "
-      "sidebar photos "
-      "sidebar photos ";
     .MinGrid {
       left: 70px;
       width: 85%;

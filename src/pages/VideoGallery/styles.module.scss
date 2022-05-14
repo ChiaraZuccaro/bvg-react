@@ -46,3 +46,63 @@
     }
   }
 }
+
+@media (min-width: 800px) {
+  .VideoGallery {
+    display: grid;
+    grid-template-areas:
+      "title title"
+      "sidebar videos"
+      "sidebar videos";
+    .GridVideo {
+      grid-area: videos;
+      display: grid;
+      position: relative;
+      left: 130px;
+
+      width: 450px;
+    }
+  }
+}
+@media (min-width: 1000px) {
+  .VideoGallery {
+    .GridVideo {
+      left: 70px;
+      width: 85%;
+    }
+
+    h2 {
+      font-size: 35px;
+    }
+  }
+}
+@media (min-width: 1150px) {
+  .VideoGallery {
+    .GridVideo {
+      left: 128px;
+      grid-template-columns: repeat(2, 455px);
+    }
+  }
+}
+@media (min-width: 1300px) {
+  .VideoGallery {
+    .GridVideo {
+      left: 110px;
+    }
+  }
+}
+@media (min-width: 1600px) {
+  .VideoGallery {
+    .GridVideo {
+      left: 150px;
+      grid-template-columns: repeat(3, 455px);
+    }
+  }
+}
+@media (min-width: 1920px) {
+  .VideoGallery {
+    .GridVideo {
+      left: 110px;
+    }
+  }
+}

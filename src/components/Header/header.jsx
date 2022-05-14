@@ -27,14 +27,14 @@ export const Header = (props) => {
   return (
     <header>
       <div className={styles.Title}>
-        <picture className={styles.Picture}>
+        <picture className={styles.Picture} id="top">
           <source media="(min-width:1000px)" srcSet={logo100x100} />
           <source media="(min-width:600px)" srcSet={logo70x70} />
           <source media="(min-width:400px)" srcSet={logo50x50} />
           <img src={logo30x30} alt="logo" />
         </picture>
         <Link to={"/"}>
-          <h1 id="top">BestViewGame</h1>
+          <h1>BestViewGame</h1>
         </Link>
       </div>
       <div className={styles.Search}>
