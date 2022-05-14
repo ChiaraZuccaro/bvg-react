@@ -105,7 +105,7 @@
         font-style: italic;
         margin: 5px 0;
         &.QuotesTop {
-          top: 780px;
+          height: 100%;
         }
 
         h5 {
@@ -131,8 +131,12 @@
         width 1.8s cubic-bezier(1, -0.01, 0.1, 0.5),
         height 1s cubic-bezier(1, -0.01, 0.1, 0.5);
       &.SideBarHigh {
-        height: 95%;
+        height: 92%;
+        padding: 10px 0;
         overflow: scroll;
+      }
+      &.SideBarHigh::-webkit-scrollbar {
+        display: none;
       }
     }
   }
