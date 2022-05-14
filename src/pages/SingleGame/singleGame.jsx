@@ -20,7 +20,7 @@ export const SingleGame = ({ renderGame }) => {
   return (
     <div className={styles.GameSpecified}>
       <>
-        <SideBar text="bel gioco" />
+        <SideBar text={objGame.description} />
         <div className={fullVisibile ? styles.OverLay : "hidden"}></div>
         <div className={fullVisibile ? styles.FullImage : "hidden"}>
           {fullImage !== "" && <img src={fullImage} alt="full" />}

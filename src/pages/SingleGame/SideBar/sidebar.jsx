@@ -8,6 +8,7 @@ import styles from "./styles.module.scss";
 
 export const SideBar = ({ text }) => {
   const [sideActive, setSideActive] = useState(false);
+  const [detailsActive, setDetailsActive] = useState(false);
   const { hash } = useLocation();
 
   const changeHash = (idElement) => {
@@ -26,6 +27,7 @@ export const SideBar = ({ text }) => {
 
   const close = () => {
     setSideActive(false);
+    setDetailsActive(false);
   };
 
   return (
@@ -46,18 +48,41 @@ export const SideBar = ({ text }) => {
         />
       </div>
 
-      <div className={`${styles.Wrapper} ${sideActive ? styles.WrapHigh : ""}`}>
+      <div
+        className={`${styles.Wrapper} ${sideActive ? styles.WrapHigh : ""} ${
+          detailsActive ? styles.WrapMoreHigh : ""
+        }`}
+      >
         <div
-          className={`${styles.SideBar} ${sideActive ? styles.Display : ""}`}
+          className={`${styles.SideBar} ${sideActive ? styles.Display : ""} ${
+            detailsActive ? styles.SideBarHigh : ""
+          }`}
         >
-          <p
-            className={`${text !== "" ? styles.Quotes : styles.Hide} 
-                ${sideActive ? styles.QuotesDisplay : ""}`}
-          >
-            " {text} "
-          </p>
           <div
-            className={`${styles.NormalButton} ${
+            className={`${text !== "" ? styles.Quotes : styles.Hide} ${
+              sideActive ? styles.QuotesDisplay : ""
+            } ${detailsActive ? styles.QuotesTop : ""}`}
+          >
+            <h5>About:</h5>
+            <p className={detailsActive ? styles.Hide : ""}>
+              " {text.split(" ").splice(0, 15).join(" ")} ..."
+            </p>
+            <p className={detailsActive ? "" : styles.Hide}>" {text} "</p>
+            <span
+              className={detailsActive ? styles.Hide : ""}
+              onClick={() => setDetailsActive(true)}
+            >
+              more
+            </span>
+            <span
+              className={detailsActive ? "" : styles.Hide}
+              onClick={() => setDetailsActive(false)}
+            >
+              close
+            </span>
+          </div>
+          <div
+            className={`${detailsActive ? styles.Hide : styles.NormalButton} ${
               sideActive ? styles.ButtonFlex : ""
             }`}
           >
