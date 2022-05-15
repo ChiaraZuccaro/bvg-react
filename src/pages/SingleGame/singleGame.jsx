@@ -22,7 +22,7 @@ export const SingleGame = ({ renderGame }) => {
         <SideBar text={objGame.description} />
 
         {fullImage !== "" && (
-          <FullImage image={fullImage} setFull={setFullImage} />
+          <FullImage imageInfo={fullImage} setFull={setFullImage} />
         )}
 
         <h2>{objGame.name}</h2>

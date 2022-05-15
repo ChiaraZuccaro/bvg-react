@@ -28,7 +28,7 @@
     border-radius: 10px;
 
     .TopFullWrap {
-      padding: 0 20px;
+      padding: 8px 20px;
       display: flex;
       flex-flow: row nowrap;
       align-items: center;
@@ -74,11 +74,62 @@
         p {
           margin: 0;
         }
+        .InstagramLink {
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: center;
+          justify-content: center;
+          width: 20em;
+          a {
+            text-decoration: none;
+            color: black;
+            font-size: 10px;
+            font-family: Impact, Haettenschweiler, "Arial Narrow Bold",
+              sans-serif;
+            width: 80%;
+          }
+          img {
+            height: 32px;
+            width: 20%;
+            object-fit: contain;
+          }
+        }
+        .InstagramData {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 5em;
+          gap: 2px;
+          p {
+            font-family: Impact, Haettenschweiler, "Arial Narrow Bold",
+              sans-serif;
+          }
+          img {
+            height: 32px;
+            object-fit: contain;
+          }
+        }
       }
     }
   }
 }
 
+@media (min-width: 400px) {
+  .FullWrap {
+    .FullImage {
+      .BottomFullWrap {
+        .BottomFull {
+          .InstagramLink {
+            a {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 @media (min-width: 800px) {
   .FullWrap {
     .FullImage {
@@ -102,6 +153,49 @@
         height: 85vh;
         object-fit: contain;
       }
+      .BottomFullWrap {
+        .BottomFull {
+          position: relative;
+          bottom: 10px;
+          padding: 10px 0;
+          .InstagramLink {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+            width: 20em;
+            a {
+              text-decoration: none;
+              color: black;
+              font-size: 20px;
+              font-family: Impact, Haettenschweiler, "Arial Narrow Bold",
+                sans-serif;
+              width: 80%;
+            }
+            img {
+              height: 32px;
+              width: 20%;
+              object-fit: contain;
+            }
+          }
+          .InstagramData {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 5em;
+            gap: 2px;
+            p {
+              font-family: Impact, Haettenschweiler, "Arial Narrow Bold",
+                sans-serif;
+            }
+            img {
+              height: 32px;
+              object-fit: contain;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -114,6 +208,11 @@
         padding: 0 50px;
         h3 {
           font-size: 30px;
+        }
+      }
+      .BottomFullWrap {
+        .BottomFull {
+          margin: 15px 0 0 0;
         }
       }
     }
