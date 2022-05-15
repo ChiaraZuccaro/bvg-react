@@ -23,10 +23,10 @@ export const VideoGallery = ({ renderGame }) => {
   return (
     <div className={styles.VideoGallery}>
       <h2>Apex Legends</h2>
-      <SideBar text="" />
+      <SideBar text={apex.description} />
       <ul className={styles.GridVideo}>
         {renderGame.includes("apex legends")
-          ? apex.map((vid, index) => (
+          ? apex.clips.map((vid, index) => (
               <Video
                 key={index}
                 videoContent={vid}

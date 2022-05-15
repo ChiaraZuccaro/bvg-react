@@ -10,16 +10,13 @@ export const Video = ({ videoContent, type, waiting }) => {
     setVisible(true);
   }, waiting * 5);
 
+  console.log(videoContent.url);
+
   return (
     <li className={`${styles.GamingCard} ${visible ? styles.Visible : ""}`}>
-      <Link
-        to={
-          type === "FPS"
-            ? "/gallery/apex-legends"
-            : location.pathname.includes("apex")
-            ? videoContent.url
-            : ""
-        }
+      <a
+        href={`${videoContent.url == "" ? "" : videoContent.url}`}
+        target="_blank"
       >
         <div className={styles.Hover}>
           <div className={styles.Overlay}></div>
@@ -28,7 +25,7 @@ export const Video = ({ videoContent, type, waiting }) => {
         <video className={styles.Video} autoPlay muted loop>
           <source src={videoContent.video} type="video/mp4" />
         </video>
-      </Link>
+      </a>
     </li>
   );
 };

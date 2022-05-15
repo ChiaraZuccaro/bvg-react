@@ -580,32 +580,43 @@ export const cover = {
   video: poster,
 };
 
-export const apex = [
-  {
-    video: clip01,
-    url: "",
-  },
-  {
-    video: clip02,
-    url: "",
-  },
-  {
-    video: clip03,
-    url: "https://www.instagram.com/p/CZ1aYiQot-e/",
-  },
-  {
-    video: clip04,
-    url: "https://www.instagram.com/p/CX8LSIXJBjt/",
-  },
-  {
-    video: clip05,
-    url: "https://www.instagram.com/p/CYOalXYI6KC/",
-  },
-  {
-    video: clip06,
-    url: "https://www.instagram.com/p/CZ6q0oOKMeW/",
-  },
-];
+export const apex = {
+  description: `Apex Legends is an online multiplayer battle royale game featuring squads of three players using pre-made characters with distinctive abilities, called "Legends", similar to those of hero shooters. Alternate modes have been introduced allowing for single and for two-player squads since the game's release. The game is free-to-play and monetized through microtransactions and loot boxes, which allow the player to spend both real money and in-game currency on cosmetic items, such as outfits for the Legends and new colors for weapons.
+
+  Each match generally features twenty teams of three-player squads. Players can join friends in a squad or can be matched randomly with other players. Before the match, each player on the squad selects one of the 20 playable characters (as of season 12), with the exception that no character may be selected more than once by a squad. Each character in the squad has a unique design, personality, and abilities that provide different playstyles to the team. All teams are then placed on an aircraft that passes over the game map. One player in each squad is the jumpmaster, selecting when the squad should skydive out of the aircraft and where to land with the concurrence of the other squad members. However, players are free to deviate from the squad's path.
+  
+  Once on the ground, the squad can scavenge for weapons, armor, and other equipment that is scattered around buildings, or in crates randomly distributed around the map, while keeping an eye out for other squads. Apex Legends includes a nonverbal communication "ping system" which allows players to use their game controller to communicate to their squad certain directions, weapon locations, enemies, and suggested strategies. While the game offers movement options similar to other shooters, it includes some of the gameplay features of previous Titanfall games, such as the ability to climb over short walls, slide down inclined surfaces, and use zip-lines to traverse an area quickly.
+  
+  Over time, the game's safe zone will reduce in size around a randomly-selected point on the map; players outside the safe zone take damage and may die if they do not reach the safe zone in time. This also confines squads to smaller spaces to force encounters. The last squad with any members left alive is crowned the "Apex Champions" of that match. Players who become knocked down in the course of a game can be revived by their squadmates. Should a player be killed completely, they can still be resurrected if their team member(s) collect their respawn banner, which appears at the place where they died, and bring it to one of several beacons on the island. The banner, however, must be collected within a time limit, before expiring and fully eliminating the player.
+  
+  Season 9 introduced a new permanent mode named "Arena". In this mode, players form into three-player squads and fight against another squad in a 3v3 team deathmatch over a series of rounds to determine the winner of the match. Teams win when their team has at least 3 points and is 2 points ahead. Additionally, if a game should drag on to round 9 (where both teams have 4 points) a final sudden death round begins. Respawn stated this scoring system "prevents total blowout games from dragging on for too long" and also "lets more competitive games keep the heat going for longer". Rather than skydiving onto the map and gathering equipment like in the battle royale mode, players spawn in a "shop" where they can purchase equipment and charges of their Legend's abilities using materials earned in the previous rounds to prepare for the next fight. This variation of the game borrows mechanics from other shooters such as Counter Strike and Valorant. The mode is the first permanent deviation away from the battle royale format.`,
+  clips: [
+    {
+      video: clip01,
+      url: "",
+    },
+    {
+      video: clip02,
+      url: "",
+    },
+    {
+      video: clip03,
+      url: "https://www.instagram.com/p/CZ1aYiQot-e/",
+    },
+    {
+      video: clip04,
+      url: "https://www.instagram.com/p/CX8LSIXJBjt/",
+    },
+    {
+      video: clip05,
+      url: "https://www.instagram.com/p/CYOalXYI6KC/",
+    },
+    {
+      video: clip06,
+      url: "https://www.instagram.com/p/CZ6q0oOKMeW/",
+    },
+  ],
+};
 
 export const funny = [
   {

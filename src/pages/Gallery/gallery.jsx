@@ -4,7 +4,7 @@ import { games, cover } from "../../game-library";
 import { Filtered } from "../../components/Filtered/filter";
 import { useEffect, useState } from "react";
 import { Video } from "../../components/Video/video";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export const Gallery = ({ searchGame }) => {
   const [searchGallery, setSearchGallery] = useState(games);
@@ -68,7 +68,9 @@ export const Gallery = ({ searchGame }) => {
 
       <h2>Gaming</h2>
       <ul className={styles.GamingSection}>
-        <Video videoContent={cover} type={"FPS"} wait={400} />
+        <Link to="/gallery/apex-legends">
+          <Video videoContent={cover} type="FPS" wait={400} />
+        </Link>
       </ul>
     </div>
   );
