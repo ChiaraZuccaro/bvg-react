@@ -1,7 +1,5 @@
 //               DAYS GONE
 
-import dgButton from "./button/dg.png";
-
 //    DAYS GONE MINIATURE
 import dg1Min from "./miniature/daysgone-miniature/01-panorama01.png";
 import dg2Min from "./miniature/daysgone-miniature/02-panorama02.png";
@@ -17,7 +15,6 @@ import dg4 from "./portfolio/days-gone-originali/04-dead.png";
 import dg5 from "./portfolio/days-gone-originali/05-hq.png";
 
 //           RISE TOMB RAIDER
-import rtrButton from "./button/rtb.png";
 
 //       RISE TOMB RIDER MINIATURE
 import rtr1BMin from "./miniature/tombraiderrise-miniature/baba-yaga/baba (1).png";
@@ -46,6 +43,8 @@ import rtr17Min from "./miniature/tombraiderrise-miniature/rise (17).png";
 import rtr18Min from "./miniature/tombraiderrise-miniature/rise (18).png";
 import rtr19Min from "./miniature/tombraiderrise-miniature/rise (19).png";
 import rtr20Min from "./miniature/tombraiderrise-miniature/rise (20).png";
+import rtr21Min from "./miniature/tombraiderrise-miniature/rise (21).png";
+import rtr22Min from "./miniature/tombraiderrise-miniature/rise (22).png";
 
 //    RISE TOMB RIDER FULL
 import rtr1B from "./portfolio/tom-raider-rise/Baba yaga/baba (1).png";
@@ -74,9 +73,10 @@ import rtr17 from "./portfolio/tom-raider-rise/rise (17).png";
 import rtr18 from "./portfolio/tom-raider-rise/rise (18).png";
 import rtr19 from "./portfolio/tom-raider-rise/rise (19).png";
 import rtr20 from "./portfolio/tom-raider-rise/rise (20).png";
+import rtr21 from "./portfolio/tom-raider-rise/rise (21).png";
+import rtr22 from "./portfolio/tom-raider-rise/rise (22).png";
 
 //             DETROIT BECOME HUMAN
-import dbhButton from "./button/dbh.png";
 
 //         DETROI BECOME HUMAN MINIATURE
 import dbh1Min from "./miniature/detroit-miniature/Alice0000.png";
@@ -105,7 +105,6 @@ import dbh10 from "./portfolio/detroit-originali/08 Looking for Jericho.png";
 import dbh11 from "./portfolio/detroit-originali/09 Meeting Lucy0000.png";
 
 //   DEVIL MAY CRY
-import dmcButton from "./button/dmc.png";
 
 //  DEVIL MAY CRY MINIATURE
 import dmc1Min from "./miniature/dmc-miniature/dmc (1).png";
@@ -132,6 +131,14 @@ import dmc21Min from "./miniature/dmc-miniature/dmc (21).png";
 import dmc22Min from "./miniature/dmc-miniature/dmc (22).png";
 import dmc23Min from "./miniature/dmc-miniature/dmc (23).png";
 import dmc24Min from "./miniature/dmc-miniature/dmc (24).png";
+import dmc25Min from "./miniature/dmc-miniature/dmc (25).png";
+import dmc26Min from "./miniature/dmc-miniature/dmc (26).png";
+import dmc27Min from "./miniature/dmc-miniature/dmc (27).png";
+import dmc28Min from "./miniature/dmc-miniature/dmc (28).png";
+import dmc29Min from "./miniature/dmc-miniature/dmc (29).png";
+import dmc30Min from "./miniature/dmc-miniature/dmc (30).png";
+import dmc31Min from "./miniature/dmc-miniature/dmc (31).png";
+import dmc32Min from "./miniature/dmc-miniature/dmc (32).png";
 
 //  DEVIL MAY CRY FULL
 import dmc1 from "./portfolio/dmc-originali/dmc (1).png";
@@ -158,9 +165,16 @@ import dmc21 from "./portfolio/dmc-originali/dmc (21).png";
 import dmc22 from "./portfolio/dmc-originali/dmc (22).png";
 import dmc23 from "./portfolio/dmc-originali/dmc (23).png";
 import dmc24 from "./portfolio/dmc-originali/dmc (24).png";
+import dmc25 from "./portfolio/dmc-originali/dmc (25).png";
+import dmc26 from "./portfolio/dmc-originali/dmc (26).png";
+import dmc27 from "./portfolio/dmc-originali/dmc (27).png";
+import dmc28 from "./portfolio/dmc-originali/dmc (28).png";
+import dmc29 from "./portfolio/dmc-originali/dmc (29).png";
+import dmc30 from "./portfolio/dmc-originali/dmc (30).png";
+import dmc31 from "./portfolio/dmc-originali/dmc (31).png";
+import dmc32 from "./portfolio/dmc-originali/dmc (32).png";
 
 //   ASSASSIN CREED ODYSSEY
-import acoButton from "./button/acM.png";
 
 //   ASSASSIN CREE ODYSSEY MINIATURE
 import aco1Min from "./miniature/assassinsodyssey-miniature/odyssey (1).png";
@@ -213,8 +227,28 @@ export const games = [
     name: "Days Gone",
     filter: [dg1Min, dg3Min, dg4Min, dg5Min],
     miniature: [dg1Min, dg2Min, dg3Min, dg4Min, dg5Min],
-    button: dgButton,
-    all: [dg1, dg2, dg3, dg4, dg5],
+    all: [
+      {
+        image: dg1,
+        shortcode: "CZrHJ7Jouer",
+      },
+      {
+        image: dg2,
+        shortcode: "CZy1h_Von6_",
+      },
+      {
+        image: dg3,
+        shortcode: "CZ9Itl_KVZP",
+      },
+      {
+        image: dg4,
+        shortcode: "CaE3Geyreex",
+      },
+      {
+        image: dg5,
+        shortcode: "CaPKRqCoZ49",
+      },
+    ],
     description: `Days Gone is a third-person action-adventure game set in a post-apocalyptic open world. The player controls Deacon St. John, an outlaw-turned-drifter-bounty-hunter who prefers life on the road to wilderness encampments. The game takes place two years after a pandemic killed almost all of humanity and transformed millions of others into "Freakers," mindless, zombie-like creatures that evolve quickly. Swarmers, a nocturnal type of Freaker, hide in their nests during daytime but often congregate, wander around, and search for food and water at night. Players can lure Swarmers toward other enemies, causing the two groups to fight one another. Other enemies include Newts, who are infected adolescents and opportunistic hunters who only attack Deacon when he enters their territory or has poor health. The game also includes infected wildlife and hostile human enemies. Players can be overwhelmed by hordes and must keep their distance. Deacon can use firearms, melee weapons, traps, explosives, and choke points to kill Freakers.
 
     The game is set in an open world in the Pacific Northwest. Players can freely explore the world on foot or using a motorcycle. The bike consumes fuel and becomes disabled if excessively damaged. Players must regularly refuel the bike at gas stations and camps, and repair it using collected scraps. Deacon must establish trust with settlement camps and earn "camp credits" by completing missions, and by selling bounties and food. As the level of trust increases, players can purchase new weapons, supplies and motorcycle parts that can be used to enhance its speed, durability and maneuverability. The bike's appearance can also be customized.
@@ -279,35 +313,44 @@ export const games = [
       rtr18Min,
       rtr19Min,
       rtr20Min,
+      rtr21Min,
+      rtr22Min,
     ],
-    button: rtrButton,
     all: [
-      rtr1B,
-      rtr2B,
-      rtr3B,
-      rtr4B,
-      rtr5B,
-      rtr6B,
-      rtr1,
-      rtr2,
-      rtr3,
-      rtr4,
-      rtr5,
-      rtr6,
-      rtr7,
-      rtr8,
-      rtr9,
-      rtr10,
-      rtr11,
-      rtr12,
-      rtr13,
-      rtr14,
-      rtr15,
-      rtr16,
-      rtr17,
-      rtr18,
-      rtr19,
-      rtr20,
+      {
+        image: rtr1B,
+        shortcode: "CWDXm3_LNyy",
+      },
+      {
+        image: rtr2B,
+        shortcode: "CWLF_xHIkcq",
+      },
+      { image: rtr3B, shortcode: "CWVZLF2IFts" },
+      { image: rtr4B, shortcode: "CWdHkFBIYYp" },
+      { image: rtr5B, shortcode: "CWnavl0Ix_r" },
+      { image: rtr6B, shortcode: "CWLF_xHIkcq" },
+      { image: rtr1, shortcode: "CWvJHjToECj" },
+      { image: rtr2, shortcode: "CW5cTEMoR2A" },
+      { image: rtr3, shortcode: "CXBKr5OoT46" },
+      { image: rtr4, shortcode: "CXLd8zToFtG" },
+      { image: rtr5, shortcode: "CXTMPzmogVN" },
+      { image: rtr6, shortcode: "CXdfa0HIwaB" },
+      { image: rtr7, shortcode: "CX3PYSio2SP" },
+      { image: rtr8, shortcode: "CYBiju9Ibdc" },
+      { image: rtr9, shortcode: "CYJQ8n3oAXF" },
+      { image: rtr10, shortcode: "CYTkHsGoggj" },
+      { image: rtr11, shortcode: "CYbSgbAIOrt" },
+      { image: rtr12, shortcode: "CYllr07o_kD" },
+      { image: rtr13, shortcode: "CYtUEgXI2MA" },
+      { image: rtr14, shortcode: "CY3nQFyoV60" },
+      { image: rtr15, shortcode: "CY_Voq-o-Yl" },
+      { image: rtr16, shortcode: "CZJo0QHIwMc" },
+      { image: rtr17, shortcode: "CZRXNSqo-LB" },
+      { image: rtr18, shortcode: "CZbqYIgLtLj" },
+      { image: rtr19, shortcode: "CZtr8aSoezc" },
+      { image: rtr20, shortcode: "CXvg_9iqblk" },
+      { image: rtr21, shortcode: "CXlN0bEory-" },
+      { image: rtr22, shortcode: "CZjYw2JocWy" },
     ],
     description:
       "Rise of the Tomb Raider is a third-person action-adventure game in which players control Lara Croft, who is on a quest to discover the legendary city of Kitezh. Combat is a major gameplay mechanic; Lara has a large variety of weapons at her disposal (including assault rifles, shotguns, and pistols), some of which have an alternate firing mode. Players may also utilize stealth to progress through portions of the game, using bows and arrows to take out enemies, creating distractions to draw enemy attention away from Lara, or hiding in bushes to evade enemies. Lara can use the environment to fight enemies, shooting explosive barrels, tearing down rope-wrapped structures with rope arrows, or ambushing enemies from high ground. She can also use her ice axe and combat knife to engage in melee combat with enemies. Completing objectives and side content and eliminating enemies give players experience points (XP). When players collect sufficient XP they level up, receiving a skill point, which can be spent on the game's three skill trees: Brawler, Hunter and Survivor.Brawler enhances Lara's efficiency with weapons, giving her abilities such as retrieving arrows from corpses and a steady aim, as well as boosting her resilience against attack and unlocks new combat skills, such as dodge kill. Hunter gives her an advantage when dealing with the environments and animals. Survivor covers a wide range of skills such as creating incendiary bombs and setting booby traps. Lara learns new languages, enabling her to discover relics (such as coins) which can be traded for new equipment.",
@@ -341,8 +384,22 @@ export const games = [
       dbh10Min,
       dbh11Min,
     ],
-    button: dbhButton,
-    all: [dbh1, dbh2, dbh3, dbh4, dbh5, dbh6, dbh7, dbh8, dbh9, dbh10, dbh11],
+    all: [
+      {
+        image: dbh1,
+        shortcode: "CY1CdYhodUn",
+      },
+      { image: dbh2, shortcode: "CY8w126I5oi" },
+      { image: dbh3, shortcode: "CYqvSMaI589" },
+      { image: dbh4, shortcode: "CYYtuKULVlJ" },
+      { image: dbh5, shortcode: "CYjA5EYowH2" },
+      { image: dbh6, shortcode: "" },
+      { image: dbh7, shortcode: "CYQ_VKDowxq" },
+      { image: dbh8, shortcode: "CZHEBMXIbW_" },
+      { image: dbh9, shortcode: "CZgz96gP0L6" },
+      { image: dbh10, shortcode: "CZOyawKon0m" },
+      { image: dbh11, shortcode: "CZZFlrjKtbR" },
+    ],
     description: `Detroit: Become Human is an adventure game played from a third-person view, which is subject to a set and controllable perspective. There are multiple playable characters who can die as the story continues without them; as a result, there is no "game over" message following a character's death. The right analogue stick on the DualShock controller is used to interact with objects and observe one's surroundings, the left is for movement, and R2 scans an environment for possible actions; the motion controls and touchpad are also employed. Via quick time events and dialogue decisions, the story will branch out depending on which choices are made. These can be viewed in a flowchart during and immediately after a given chapter; the player can rewind to certain points in the story to reshape decisions in the event of regret. Certain scenes feature countdowns, which force quick action. Levels abound with magazines for players to read. The playable characters are:
 
     Connor, a police investigator android tasked with hunting down androids that have deviated from their programmed behaviours.
@@ -377,6 +434,11 @@ export const games = [
       dmc22Min,
       dmc23Min,
       dmc24Min,
+      dmc27Min,
+      dmc29Min,
+      dmc30Min,
+      dmc31Min,
+      dmc32Min,
     ],
     miniature: [
       dmc1Min,
@@ -403,33 +465,48 @@ export const games = [
       dmc22Min,
       dmc23Min,
       dmc24Min,
+      dmc25Min,
+      dmc26Min,
+      dmc27Min,
+      dmc28Min,
+      dmc29Min,
+      dmc30Min,
+      dmc31Min,
+      dmc32Min,
     ],
-    button: dmcButton,
     all: [
-      dmc1,
-      dmc2,
-      dmc3,
-      dmc4,
-      dmc5,
-      dmc6,
-      dmc7,
-      dmc8,
-      dmc9,
-      dmc10,
-      dmc11,
-      dmc12,
-      dmc13,
-      dmc14,
-      dmc15,
-      dmc16,
-      dmc17,
-      dmc18,
-      dmc19,
-      dmc20,
-      dmc21,
-      dmc22,
-      dmc23,
-      dmc24,
+      { image: dmc1, shortcode: "CWF8Z_To17x" },
+      { image: dmc2, shortcode: "CWNqytmoIbX" },
+      { image: dmc3, shortcode: "CWX990ZP5r2" },
+      { image: dmc4, shortcode: "CWfsWubIqFu" },
+      { image: dmc5, shortcode: "CWp_iEvIkma" },
+      { image: dmc6, shortcode: "CWxt7BZIWvx" },
+      { image: dmc7, shortcode: "CW8BGBbI-7m" },
+      { image: dmc8, shortcode: "CXDve9VK6OC" },
+      { image: dmc9, shortcode: "CXOCqNhIlBl" },
+      { image: dmc10, shortcode: "CXVxC7oIht4" },
+      { image: dmc11, shortcode: "CXgEOjdo9B0" },
+      { image: dmc12, shortcode: "CXnym1tKRZy" },
+      { image: dmc13, shortcode: "CXyFyt8ImqP" },
+      { image: dmc14, shortcode: "CX50LJRoRd1" },
+      { image: dmc15, shortcode: "CYEHXAcICfF" },
+      { image: dmc16, shortcode: "CYL1vV8qEm-" },
+      { image: dmc17, shortcode: "CYWI62oKOJH" },
+      { image: dmc18, shortcode: "CYd3TSEqmV_" },
+      { image: dmc19, shortcode: "CZ3_HsIINmF" },
+      { iamge: dmc20, shortcode: "CaCSTZ1qVlH" },
+      { image: dmc21, shortcode: "CaKAr6Cor2N" },
+      { image: dmc22, shortcode: "CaUT3ltIslJ" },
+      { image: dmc23, shortcode: "CacCQTvqt9G" },
+      { image: dmc24, shortcode: "CamVbk-ImPA" },
+      { image: dmc25, shortcode: "CYoKe-AK4GM" },
+      { image: dmc26, shortcode: "CYv43dzIGUD" },
+      { image: dmc27, shortcode: "CY6MCI7qumT" },
+      { image: dmc28, shortcode: "CZB6b1fos6A" },
+      { image: dmc29, shortcode: "CZMNnJrIsXk" },
+      { image: dmc30, shortcode: "CZT7_33o52_" },
+      { image: dmc31, shortcode: "CZePLMGIQcV" },
+      { image: dmc32, shortcode: "CZl9kEZK38g" },
     ],
     description: `In this retelling of Dante's origin story which is set against a contemporary backdrop, DmC Devil May Cry™ retains the stylish action, fluid combat and self-assured protagonist that have defined the iconic series but inject a more brutal and visceral edge.
 
@@ -475,24 +552,23 @@ export const games = [
       aco15Min,
       aco16Min,
     ],
-    button: acoButton,
     all: [
-      aco1,
-      aco2,
-      aco3,
-      aco4,
-      aco5,
-      aco6,
-      aco7,
-      aco8,
-      aco9,
-      aco10,
-      aco11,
-      aco12,
-      aco13,
-      aco14,
-      aco15,
-      aco16,
+      { image: aco1, shortcode: "" },
+      { image: aco2, shortcode: "CWIhMjRIYap" },
+      { image: aco3, shortcode: "CWS0YB0vxMT" },
+      { image: aco4, shortcode: "CWaixGkq53D" },
+      { image: aco5, shortcode: "CWk18LgKVI1" },
+      { image: aco6, shortcode: "CWskVSDqJP5" },
+      { image: aco7, shortcode: "" },
+      { image: aco8, shortcode: "CW-l4yuoGhB" },
+      { image: aco9, shortcode: "CXI5EnNIlRf" },
+      { image: aco10, shortcode: "CXQnchNo7LA" },
+      { image: aco11, shortcode: "CXa6odnI4V2" },
+      { image: aco12, shortcode: "CXipBHpK3qY" },
+      { image: aco13, shortcode: "CXs8M2OKKgT" },
+      { image: aco14, shortcode: "CX0qlP7oVxM" },
+      { image: aco15, shortcode: "CX-9wzyoYKD" },
+      { image: aco16, shortcode: "CYGsJR5IHPV" },
     ],
     description: `Assassin's Creed Odyssey is an action role-playing video game played from a third-person perspective. At the beginning of the game, the player can select to play as either Alexios or Kassandra, Greek mercenaries and descendants of the Spartan king Leonidas I. In addition to completing the story campaign, players can freely explore a large open world set in Greece on foot or on horseback. As the player explores the world, they will encounter various non-playable characters (NPCs) who give players side missions to complete. They also discover locations of interests, clear out fortresses and camps, explore tombs and shipwrecks, and collect hidden treasures. Synchronization points in various landmarks in Greece, which serve as fast travel points, can also be unlocked. Players can also collect various crafting resources, such as iron ore, wood, leather, metal, and precious gems, through exploration and hunting wildlife. Other side activities players can undertake include competing in a gladiatorial arena and completing time-limited bounties and contracts. Unlike the previous games in the series, Odyssey offers two modes of gameplay: Guided mode shows the player the locations of their objects immediately using waypoints, while Exploration mode tasks players to find out the locations themselves after being given brief clues from other NPCs.
 
