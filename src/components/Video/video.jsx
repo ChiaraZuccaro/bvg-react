@@ -4,7 +4,7 @@ import styles from "./styles.module.scss";
 
 export const Video = ({ videoContent, type, waiting }) => {
   const [visible, setVisible] = useState(false);
-  const location = useLocation();
+  // const location = useLocation();
 
   setTimeout(() => {
     setVisible(true);
