@@ -212,15 +212,6 @@ import aco14 from "./portfolio/assassins-odyssey-originali/odyssey (14).png";
 import aco15 from "./portfolio/assassins-odyssey-originali/odyssey (15).png";
 import aco16 from "./portfolio/assassins-odyssey-originali/odyssey (16).png";
 
-//   APEX LEGENDS CLIPS
-import poster from "./apexclip.mp4";
-import clip01 from "./portfolio/apex-clips/LAG-Clip.mp4";
-import clip02 from "./portfolio/apex-clips/gibby-ult-again.mp4";
-import clip03 from "./portfolio/apex-clips/best-gibby's-ult.mp4";
-import clip04 from "./portfolio/apex-clips/full-team-rank.mp4";
-import clip05 from "./portfolio/apex-clips/huh.mp4";
-import clip06 from "./portfolio/apex-clips/spitfire-alla-riscossa.mp4";
-
 export const games = [
   // Days gone
   {
@@ -573,54 +564,5 @@ export const games = [
     description: `Assassin's Creed Odyssey is an action role-playing video game played from a third-person perspective. At the beginning of the game, the player can select to play as either Alexios or Kassandra, Greek mercenaries and descendants of the Spartan king Leonidas I. In addition to completing the story campaign, players can freely explore a large open world set in Greece on foot or on horseback. As the player explores the world, they will encounter various non-playable characters (NPCs) who give players side missions to complete. They also discover locations of interests, clear out fortresses and camps, explore tombs and shipwrecks, and collect hidden treasures. Synchronization points in various landmarks in Greece, which serve as fast travel points, can also be unlocked. Players can also collect various crafting resources, such as iron ore, wood, leather, metal, and precious gems, through exploration and hunting wildlife. Other side activities players can undertake include competing in a gladiatorial arena and completing time-limited bounties and contracts. Unlike the previous games in the series, Odyssey offers two modes of gameplay: Guided mode shows the player the locations of their objects immediately using waypoints, while Exploration mode tasks players to find out the locations themselves after being given brief clues from other NPCs.
 
     While the main campaign missions follow the mercenary as they reunite their family and stop the Cult of Kosmos, additional questlines task the players to defeat mystical creatures from Atlantis and take down cultists. As the game is set during the Peloponnesian War, Athens and Sparta control various parts of Greece. An area can be weakened if the player assassinates the nation leader, defeats members of their army, burns down war supplies, or pillages their nation chests. When a region is weakened, players can join a conquest battle to aid either the attacking or the defending side. Winning a battle will earn the player valuable loots and gears. Joining the attacking team is a more challenging experience but it will offer more gameplay benefits. A bounty is placed on the player character if they commit a crime such as stealing or hurting an innocent bystander in public. NPCs called Mercenaries will then arrive to hunt the player character, who can either kill the mercenary, pay the bounty, or assassinate the character who place the bounty on them. Each area has a recommended level. The player may be easily overpowered if they venture into an area too early. However, the game's difficulty is scaled in accordance to the player's level. When interacting with other NPCs, players can select various dialogue options, including the option to develop a romantic relationship with some of them. At key moments of the game's campaign, players make crucial decisions which can affect the course of the story and lead to several different endings`,
-  },
-];
-
-export const cover = {
-  video: poster,
-};
-
-export const apex = {
-  description: `Apex Legends is an online multiplayer battle royale game featuring squads of three players using pre-made characters with distinctive abilities, called "Legends", similar to those of hero shooters. Alternate modes have been introduced allowing for single and for two-player squads since the game's release. The game is free-to-play and monetized through microtransactions and loot boxes, which allow the player to spend both real money and in-game currency on cosmetic items, such as outfits for the Legends and new colors for weapons.
-
-  Each match generally features twenty teams of three-player squads. Players can join friends in a squad or can be matched randomly with other players. Before the match, each player on the squad selects one of the 20 playable characters (as of season 12), with the exception that no character may be selected more than once by a squad. Each character in the squad has a unique design, personality, and abilities that provide different playstyles to the team. All teams are then placed on an aircraft that passes over the game map. One player in each squad is the jumpmaster, selecting when the squad should skydive out of the aircraft and where to land with the concurrence of the other squad members. However, players are free to deviate from the squad's path.
-  
-  Once on the ground, the squad can scavenge for weapons, armor, and other equipment that is scattered around buildings, or in crates randomly distributed around the map, while keeping an eye out for other squads. Apex Legends includes a nonverbal communication "ping system" which allows players to use their game controller to communicate to their squad certain directions, weapon locations, enemies, and suggested strategies. While the game offers movement options similar to other shooters, it includes some of the gameplay features of previous Titanfall games, such as the ability to climb over short walls, slide down inclined surfaces, and use zip-lines to traverse an area quickly.
-  
-  Over time, the game's safe zone will reduce in size around a randomly-selected point on the map; players outside the safe zone take damage and may die if they do not reach the safe zone in time. This also confines squads to smaller spaces to force encounters. The last squad with any members left alive is crowned the "Apex Champions" of that match. Players who become knocked down in the course of a game can be revived by their squadmates. Should a player be killed completely, they can still be resurrected if their team member(s) collect their respawn banner, which appears at the place where they died, and bring it to one of several beacons on the island. The banner, however, must be collected within a time limit, before expiring and fully eliminating the player.
-  
-  Season 9 introduced a new permanent mode named "Arena". In this mode, players form into three-player squads and fight against another squad in a 3v3 team deathmatch over a series of rounds to determine the winner of the match. Teams win when their team has at least 3 points and is 2 points ahead. Additionally, if a game should drag on to round 9 (where both teams have 4 points) a final sudden death round begins. Respawn stated this scoring system "prevents total blowout games from dragging on for too long" and also "lets more competitive games keep the heat going for longer". Rather than skydiving onto the map and gathering equipment like in the battle royale mode, players spawn in a "shop" where they can purchase equipment and charges of their Legend's abilities using materials earned in the previous rounds to prepare for the next fight. This variation of the game borrows mechanics from other shooters such as Counter Strike and Valorant. The mode is the first permanent deviation away from the battle royale format.`,
-  clips: [
-    {
-      video: clip01,
-      url: "",
-    },
-    {
-      video: clip02,
-      url: "",
-    },
-    {
-      video: clip03,
-      url: "https://www.instagram.com/p/CZ1aYiQot-e/",
-    },
-    {
-      video: clip04,
-      url: "https://www.instagram.com/p/CX8LSIXJBjt/",
-    },
-    {
-      video: clip05,
-      url: "https://www.instagram.com/p/CYOalXYI6KC/",
-    },
-    {
-      video: clip06,
-      url: "https://www.instagram.com/p/CZ6q0oOKMeW/",
-    },
-  ],
-};
-
-export const funny = [
-  {
-    video: "",
-    url: "",
   },
 ];

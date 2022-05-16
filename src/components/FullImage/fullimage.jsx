@@ -6,16 +6,16 @@ import styles from "./styles.module.scss";
 
 export const FullImage = ({ imageInfo, setFull }) => {
   const [imageData, setImageData] = useState();
-  // useEffect(() => {
-  //   GET(imageInfo.shortcode).then((data) => setImageData(data.data));
-  // }, []);
+  useEffect(() => {
+    GET(imageInfo.shortcode).then((data) => setImageData(data.data));
+  }, []);
 
-  // console.log(
-  //   imageData &&
-  //     imageData.shortcode_media.edge_media_to_caption.edges[0].node.text
-  //       .split("#")
-  //       .splice(0, 1)
-  // );
+  console.log(
+    imageData &&
+      imageData.shortcode_media.edge_media_to_caption.edges[0].node.text
+        .split("#")
+        .splice(0, 1)
+  );
 
   return (
     <div className={styles.FullWrap}>
