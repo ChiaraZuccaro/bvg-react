@@ -19,7 +19,7 @@
   .HomeFlexWrap {
     position: absolute;
     top: 2.8em;
-    height: 59.5vh;
+    height: 88.2vh;
     width: 100vw;
     border: 1px black solid;
     .HomeFlex {
@@ -92,7 +92,7 @@
 @media (min-width: 340px) {
   .Hero {
     .HomeFlexWrap {
-      height: 63.7vh;
+      height: 95.03vh;
       .HomeFlex {
         a {
           font-size: 14px;
@@ -105,7 +105,7 @@
 @media (min-width: 360px) {
   .Hero {
     .HomeFlexWrap {
-      height: 67.7vh;
+      height: 101.4vh;
       .HomeFlex {
         h2 {
           font-size: 25px;
@@ -117,7 +117,7 @@
 @media (min-width: 380px) {
   .Hero {
     .HomeFlexWrap {
-      height: 70.7vh;
+      height: 106.5vh;
       .HomeFlex {
         h2 {
           font-size: 28px;
@@ -135,7 +135,7 @@
   .Hero {
     .HomeFlexWrap {
       top: 3.95em;
-      height: 77.1vh;
+      height: 110.5vh;
       .HomeFlex {
         h2 {
           font-size: 30px;
@@ -147,7 +147,7 @@
 @media (min-width: 450px) {
   .Hero {
     .HomeFlexWrap {
-      height: 84.5vh;
+      height: 124.2vh;
       .HomeFlex {
         h2 {
           font-size: 33px;
@@ -159,7 +159,7 @@
 @media (min-width: 480px) {
   .Hero {
     .HomeFlexWrap {
-      height: 90vh;
+      height: 134.25vh;
       .HomeFlex {
         a {
           padding: 30px 40px;
@@ -171,7 +171,7 @@
 @media (min-width: 500px) {
   .Hero {
     .HomeFlexWrap {
-      height: 57vh;
+      height: 83.5vh;
       .HomeFlex {
         h2 {
           font-size: 35px;
@@ -180,11 +180,18 @@
     }
   }
 }
+@media (min-width: 550px) {
+  .Hero {
+    .HomeFlexWrap {
+      height: 92vh;
+    }
+  }
+}
 @media (min-width: 600px) {
   .Hero {
     .HomeFlexWrap {
       top: 5.7em;
-      height: 68vh;
+      height: 100vh;
       .HomeFlex {
         h2 {
           font-size: 42px;
@@ -196,14 +203,14 @@
 @media (min-width: 700px) {
   .Hero {
     .HomeFlexWrap {
-      height: 79vh;
+      height: 117.8vh;
     }
   }
 }
 @media (min-width: 800px) {
   .Hero {
     .HomeFlexWrap {
-      height: 91vh;
+      height: 134.2vh;
       .HomeFlex {
         h2 {
           font-size: 50px;
@@ -220,7 +227,7 @@
 @media (min-width: 900px) {
   .Hero {
     .HomeFlexWrap {
-      height: 68.5vh;
+      height: 101.2vh;
       .HomeFlex {
         h2 {
           font-size: 53px;
@@ -233,21 +240,21 @@
   .Hero {
     .HomeFlexWrap {
       top: 7.2em;
-      height: 77.3vh;
+      height: 113.5vh;
     }
   }
 }
 @media (min-width: 1150px) {
   .Hero {
     .HomeFlexWrap {
-      height: 87vh;
+      height: 93.8vh;
     }
   }
 }
 @media (min-width: 1500px) {
   .Hero {
     .HomeFlexWrap {
-      height: 98.3vh;
+      height: 96vh;
       .HomeFlex {
         h2 {
           font-size: 70px;
@@ -264,7 +271,7 @@
 @media (min-width: 1800px) {
   .Hero {
     .HomeFlexWrap {
-      height: 121vh;
+      height: 110.5vh;
       .HomeFlex {
         h2 {
           font-size: 80px;
