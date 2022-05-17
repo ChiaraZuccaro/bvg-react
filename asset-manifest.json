@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/bvg-react/static/css/main.46397d9e.css",
+    "main.css": "/bvg-react/static/css/main.c1a2bbef.css",
     "main.js": "/bvg-react/static/js/main.286a2301.js",
     "static/js/787.20afa1c9.chunk.js": "/bvg-react/static/js/787.20afa1c9.chunk.js",
     "static/media/01-panorama01.png": "/bvg-react/static/media/01-panorama01.c6116834545d908142db.png",
@@ -112,12 +112,12 @@
     "static/media/logo100x100.png": "/bvg-react/static/media/logo100x100.bd3b5af3f47f1a7c3350.png",
     "static/media/logo70x70.png": "/bvg-react/static/media/logo70x70.de7718e80e2fe028fcc2.png",
     "index.html": "/bvg-react/index.html",
-    "main.46397d9e.css.map": "/bvg-react/static/css/main.46397d9e.css.map",
+    "main.c1a2bbef.css.map": "/bvg-react/static/css/main.c1a2bbef.css.map",
     "main.286a2301.js.map": "/bvg-react/static/js/main.286a2301.js.map",
     "787.20afa1c9.chunk.js.map": "/bvg-react/static/js/787.20afa1c9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.46397d9e.css",
+    "static/css/main.c1a2bbef.css",
     "static/js/main.286a2301.js"
   ]
 }
