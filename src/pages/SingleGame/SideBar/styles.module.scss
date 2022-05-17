@@ -131,7 +131,8 @@
         width 1.8s cubic-bezier(1, -0.01, 0.1, 0.5),
         height 1s cubic-bezier(1, -0.01, 0.1, 0.5);
       &.SideBarHigh {
-        height: 92%;
+        top: 340px;
+        height: 45%;
         padding: 10px 0;
         overflow: scroll;
       }
@@ -144,6 +145,26 @@
 
 .Hide {
   display: none;
+}
+
+@media (min-width: 500px) {
+  .Icon {
+    bottom: 50px;
+  }
+
+  .Wrapper {
+    bottom: 70px;
+    z-index: 8887;
+    .SideBar {
+      &.Display {
+        &.SideBarHigh {
+          top: 470px;
+          width: 430px;
+          height: 180px;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 800px) {
