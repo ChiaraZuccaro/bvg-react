@@ -32,7 +32,7 @@ export const Gallery = ({ searchGame }) => {
 
   return (
     <div className={styles.All}>
-      <h2>Photography</h2>
+      <blockquote>" Where gaming meet photography "</blockquote>
       <ul className={searchGame === undefined ? styles.Gallery : styles.Hide}>
         {games.map((game, index) => {
           return (

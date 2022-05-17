@@ -11,6 +11,8 @@ export const SideBar = ({ text }) => {
   const [detailsActive, setDetailsActive] = useState(false);
   const { hash } = useLocation();
 
+  console.log(text.split("/n"));
+
   const changeHash = (idElement) => {
     const element = document.getElementById(idElement);
     hash.replace(idElement, "");
@@ -67,7 +69,9 @@ export const SideBar = ({ text }) => {
             <p className={detailsActive ? styles.Hide : ""}>
               " {text.split(" ").splice(0, 15).join(" ")} ..."
             </p>
-            <p className={detailsActive ? "" : styles.Hide}>" {text} "</p>
+            <p className={detailsActive ? "" : styles.Hide}>
+              " {text.split("/n").join(` `)} "
+            </p>
             <span
               className={detailsActive ? styles.Hide : ""}
               onClick={() => setDetailsActive(true)}

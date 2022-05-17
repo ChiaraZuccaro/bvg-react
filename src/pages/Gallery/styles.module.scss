@@ -1,84 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
 
 .All {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+
+  margin: 5px 0;
+
+  .Gallery {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 30px;
 
-    margin: 5px 0;
+    margin: 8px 15px;
 
-    .Gallery {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        gap: 30px;
-    
-        margin: 8px 15px;
-    
-        padding: 0;
-    
-        list-style: none;
-    
-        transition: all 0.3 ease-in-out;
-    
-        animation-name: gallery;
-        animation-duration: 3s;
-    }
-    .Hide {
-        display: none;
-    }
-    h2 {
-        margin: 0;
-        margin-top: 12px;
+    padding: 0;
 
-        font-size: 17px;
-        font-family: 'Koulen', cursive;
-    }
+    list-style: none;
+
+    transition: all 0.3 ease-in-out;
+
+    animation-name: gallery;
+    animation-duration: 3s;
+  }
+  .Hide {
+    display: none;
+  }
+  blockquote {
+    margin: 0;
+    margin-top: 12px;
+    font-size: 17px;
+    font-family: "Carter One", cursive;
+    text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc,
+      1px 2px 1px #eeeeee, 3px 2px 1px #cccccc, 2px 3px 1px #eeeeee,
+      4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc,
+      4px 5px 1px #eeeeee, 6px 5px 1px #cccccc, 5px 6px 1px #eeeeee,
+      7px 6px 1px #cccccc, 2px 2px 2px rgba(206, 89, 55, 0);
+  }
 }
-
-
-
 
 .GamingSection {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
 
-    padding: 0;    
+  padding: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 @media (min-width: 400px) {
-    .All {        
-        h2 {
-            font-size: 20px;
-        }
+  .All {
+    blockquote {
+      font-size: 20px;
     }
+  }
 }
 @media (min-width: 600px) {
-    .All {        
-        h2 {
-            font-size: 27px;
-        }
+  .All {
+    blockquote {
+      font-size: 27px;
     }
+  }
 }
 @media (min-width: 1000px) {
-    .All {   
-        gap: 16px;     
-        h2 {
-            font-size: 33px;
-        }
+  .All {
+    gap: 16px;
+    blockquote {
+      font-size: 33px;
     }
+  }
 }

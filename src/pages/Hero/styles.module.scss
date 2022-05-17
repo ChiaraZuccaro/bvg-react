@@ -1,282 +1,275 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .Hero {
+  width: 100%;
+
+  img {
+    display: block;
     width: 100%;
+    height: auto;
 
-    img{
-        display: block;
-        width: 100%;
-        height: auto;
+    animation-duration: 0.3s;
+    animation-name: hero;
+  }
 
-        animation-duration: 0.3s;
-        animation-name: hero;
-    }
-
+  .HomeFlexWrap {
+    position: absolute;
+    top: 2.8em;
+    height: 59.5vh;
+    width: 100vw;
+    border: 1px black solid;
     .HomeFlex {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-    
-        width: 100%;
-        height: 40%;
-    
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
 
-        animation-name: homeflex;
-        animation-duration: 2s;
+      width: 100%;
+      height: 100%;
 
+      animation-name: homeflex;
+      animation-duration: 2s;
+
+      h2 {
+        font-size: 23px;
+        font-family: "Black Ops One", cursive;
+
+        background-color: rgb(255, 255, 255);
+
+        padding: 5px 10px;
+      }
+
+      a {
+        padding: 40px 20px;
+
+        border-radius: 70px;
+        border: none;
+
+        background-color: rgb(255, 255, 255);
+
+        font-size: 13px;
+
+        -webkit-box-shadow: 0px 0px 17px 10px #ffffff;
+        box-shadow: 0px 0px 17px 10px #ffffff;
+
+        text-decoration: none;
+
+        transition: all 0.3s ease-in-out;
+
+        color: black;
+      }
+      a:hover {
+        background-color: black;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+@keyframes hero {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes homeflex {
+  0% {
+    opacity: 0;
+    scale: 0;
+  }
+  100% {
+    opacity: 1;
+    scale: 2;
+  }
+}
+
+@media (min-width: 340px) {
+  .Hero {
+    .HomeFlexWrap {
+      height: 63.7vh;
+      .HomeFlex {
+        a {
+          font-size: 14px;
+          padding: 45px 25px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 360px) {
+  .Hero {
+    .HomeFlexWrap {
+      height: 67.7vh;
+      .HomeFlex {
         h2 {
-            font-size: 23px;
-            font-family: 'Black Ops One', cursive;
-        
-            background-color: rgb(255, 255, 255);
-        
-            padding: 5px 10px;
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 380px) {
+  .Hero {
+    .HomeFlexWrap {
+      height: 70.7vh;
+      .HomeFlex {
+        h2 {
+          font-size: 28px;
         }
 
         a {
-            padding: 40px 20px;
-        
-            border-radius: 70px;
-            border: none;
-        
-            background-color: rgb(255, 255, 255);
-        
-            font-size: 13px;
-        
-            -webkit-box-shadow: 0px 0px 17px 10px #FFFFFF; 
-            box-shadow: 0px 0px 17px 10px #FFFFFF;
-        
-            text-decoration: none;
-        
-            transition: all 0.3s ease-in-out;
-        
-            color: black;
+          padding: 25px 35px;
+          font-size: 16px;
         }
-        a:hover {
-            background-color: black;
-            color: #FFFFFF;
-        }
+      }
     }
-}
-
-
-
-@keyframes hero {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-@keyframes homeflex {
-    0% {
-        opacity: 0;
-        scale: 0;
-    }
-    100% {
-        opacity: 1;
-        scale: 2;
-    }
-}
-
-
-
-
-
-@media (min-width: 340px) {
-    .Hero {
-        .HomeFlex {
-            height: 45%;
-    
-            transform: translate(-50%, -90%);
-
-            a {    
-                font-size: 14px;
-        
-                padding: 45px 25px;
-            }
-        }
-    }
-}
-@media (min-width: 360px) {
-    .Hero {
-        .HomeFlex {
-            transform: translate(-50%, -86%);
-
-            h2 {
-                font-size: 25px;
-            }
-        }
-    }
-}
-@media (min-width: 380px) {
-    .Hero {
-        .HomeFlex {
-        transform: translate(-50%, -81%);
-
-            h2 {
-                font-size: 28px;
-            }
-
-            a {    
-                padding: 25px 35px;
-            
-                font-size: 16px;
-            }
-        }
-    }
+  }
 }
 @media (min-width: 400px) {
-    .Hero {
-        .HomeFlex {
-            height: 50%;
-            transform: translate(-50%, -70%);
-
-            h2 {
-                font-size: 30px;
-            }
+  .Hero {
+    .HomeFlexWrap {
+      top: 3.95em;
+      height: 77.1vh;
+      .HomeFlex {
+        h2 {
+          font-size: 30px;
         }
+      }
     }
+  }
 }
 @media (min-width: 450px) {
-    .Hero {
-        .HomeFlex {
-            height: 60%;
-            transform: translate(-50%, -60%);
-
-            h2 {
-                font-size: 33px;
-            }
+  .Hero {
+    .HomeFlexWrap {
+      height: 84.5vh;
+      .HomeFlex {
+        h2 {
+          font-size: 33px;
         }
+      }
     }
+  }
 }
 @media (min-width: 480px) {
-    .Hero {
-        .HomeFlex {
-            height: 58%;
-            transform: translate(-50%, -60%);
-
-            a {    
-                padding: 30px 40px;
-            }
+  .Hero {
+    .HomeFlexWrap {
+      height: 90vh;
+      .HomeFlex {
+        a {
+          padding: 30px 40px;
         }
+      }
     }
+  }
 }
 @media (min-width: 500px) {
-    .Hero {
-        .HomeFlex {
-            height: 40%;
-            transform: translate(-50%, -98%);
-
-            h2 {
-                font-size: 35px;
-            }
+  .Hero {
+    .HomeFlexWrap {
+      height: 57vh;
+      .HomeFlex {
+        h2 {
+          font-size: 35px;
         }
+      }
     }
+  }
 }
 @media (min-width: 600px) {
-    .Hero {
-        .HomeFlex {
-            height: 45%;
-            transform: translate(-50%, -73%);
-
-            h2 {
-                font-size: 42px;
-            }
+  .Hero {
+    .HomeFlexWrap {
+      top: 5.7em;
+      height: 68vh;
+      .HomeFlex {
+        h2 {
+          font-size: 42px;
         }
+      }
     }
+  }
 }
 @media (min-width: 700px) {
-    .Hero {
-        .HomeFlex {
-            height: 50%;
-            transform: translate(-50%, -60%);
-        }
+  .Hero {
+    .HomeFlexWrap {
+      height: 79vh;
     }
+  }
 }
 @media (min-width: 800px) {
-    .Hero {
-        .HomeFlex {
-            height: 60%;
-            transform: translate(-50%, -53%);
-
-            h2 {
-                font-size: 50px;
-            }
-
-            a {    
-                padding: 35px 50px;
-        
-                font-size: 18px;
-            }
+  .Hero {
+    .HomeFlexWrap {
+      height: 91vh;
+      .HomeFlex {
+        h2 {
+          font-size: 50px;
         }
+
+        a {
+          padding: 35px 50px;
+          font-size: 18px;
+        }
+      }
     }
+  }
 }
 @media (min-width: 900px) {
-    .Hero {
-        .HomeFlex {
-            height: 48%;
-            transform: translate(-50%, -74%);
-
-            h2 {
-                font-size: 53px;
-            }
+  .Hero {
+    .HomeFlexWrap {
+      height: 68.5vh;
+      .HomeFlex {
+        h2 {
+          font-size: 53px;
         }
+      }
     }
+  }
 }
 @media (min-width: 1000px) {
-    .Hero {
-        .HomeFlex {
-            height: 55%;
-            transform: translate(-50%, -58%);
-        }
+  .Hero {
+    .HomeFlexWrap {
+      top: 7.2em;
+      height: 77.3vh;
     }
+  }
 }
 @media (min-width: 1150px) {
-    .Hero {
-        .HomeFlex {
-            height: 55%;
-            transform: translate(-50%, -50%);
-        }
+  .Hero {
+    .HomeFlexWrap {
+      height: 87vh;
     }
+  }
 }
 @media (min-width: 1500px) {
-    .Hero {
-        .HomeFlex {
-            height: 70%;
-            transform: translate(-50%, -46%);
-
-            h2 {
-                font-size: 70px;
-            }
-
-            a {
-                font-size: 21px;
-        
-                padding: 40px 70px;
-            }
+  .Hero {
+    .HomeFlexWrap {
+      height: 98.3vh;
+      .HomeFlex {
+        h2 {
+          font-size: 70px;
         }
+
+        a {
+          font-size: 21px;
+          padding: 40px 70px;
+        }
+      }
     }
+  }
 }
 @media (min-width: 1800px) {
-    .Hero {
-        .HomeFlex {
-            height: 80%;
-            transform: translate(-50%, -30%);
-
-            h2 {
-                font-size: 80px;
-            }
+  .Hero {
+    .HomeFlexWrap {
+      height: 121vh;
+      .HomeFlex {
+        h2 {
+          font-size: 80px;
         }
+      }
     }
+  }
 }
