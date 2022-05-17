@@ -2,11 +2,13 @@ import styles from "./styles.module.scss";
 
 import { games } from "../../game-library";
 import { Miniature } from "./Miniature/miniature";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { SideBar } from "./SideBar/sidebar";
 import { FullImage } from "../../components/FullImage/fullimage";
+import { useLocation } from "react-router-dom";
 
 export const SingleGame = ({ renderGame }) => {
+  const { pathname, hash } = useLocation();
   const objGame = games.filter((game) =>
     game.name.toLowerCase().includes(renderGame)
   )[0];
@@ -15,6 +17,20 @@ export const SingleGame = ({ renderGame }) => {
   const reachFull = (index) => {
     setFullImage(objGame.all[index]);
   };
+
+  useEffect(() => {
+    if (hash === "") {
+      window.scrollTo(0, 0);
+    } else {
+      setTimeout(() => {
+        const id = hash.replace("top", "");
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView();
+        }
+      }, 0);
+    }
+  }, [pathname, hash]);
 
   return (
     <div className={styles.GameSpecified}>
